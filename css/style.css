@@ -9,7 +9,6 @@
     }
 
     #blocPage{
-        /* background-color: coral; */
         background-image: url("../images/bois.jpg");
         background-repeat : repeat-y;
         background-size: 100%;
@@ -29,10 +28,9 @@
    /* ----------------------titre------------------ */
 
     h1{
-        font-size: 4em;
+        font-size: 3em;
         text-align: center;
         line-height: 0.5em;
-       
     }
   /* ------------------------choix joueur------------------ */
     #choixJoueur{
@@ -42,8 +40,7 @@
     #icones{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-       
+        justify-content: space-around;  
     }
     #icones img{
         border-radius: 50%;
@@ -62,9 +59,9 @@
     }
     .choix{
         text-align: center;
-        font-size: 2em;
-        margin-top: 0;
-        margin-bottom: 1em;
+        font-size: 1.8em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
         order:6;
     }
 
@@ -76,8 +73,7 @@
     #combat{
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        
+        justify-content: center;   
     }
     #combat img{
         max-width: 40%;
@@ -85,8 +81,7 @@
         height: 150px;
     }
     #combat img:nth-child(2){
-        max-width: 20%;
-        
+        max-width: 20%;  
     }
 
     /* ----------------------resultat----------------- */
@@ -96,7 +91,7 @@
         background-color: rgba(116, 81, 56, 0.4);
         margin: 1em auto;
         text-align: center;
-        font-size: 2em;
+        font-size: 1.8em;
         line-height: 50px;
        
     }
@@ -116,7 +111,6 @@
         line-height: 30px;
         color: white;
         border: none;
-        /* margin: auto; */
         font-family: "Courgette"; 
         box-shadow: 5px 5px 4px black;
     }
@@ -130,56 +124,50 @@
     #blocPage {
         flex-direction: column;
     }
+    h1{
+        font-size: 8vw;
+    }
     #blocJeu {
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         min-height: 100%;
     }
     #blocCombat {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content:space-around;
         order: 2;
+        margin-left: 10%;
     }
     #choixJoueur{
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 30%;
-        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .choix{
+        font-size: 2em;
     }
 
     #icones{
         flex-direction: column;
         align-items: center;
         order: 1;
-        
-        /* height: 100%; */
     }
     #icones img{
         max-width: 100%;
         height: auto;
         margin: 5% auto;
         width : 150px;
-        /* height : 100px; */
     }
 
     #combat img{
         width: 300px;
         height: 300px;
     }
-
-    .choix{
-    /* display: none; */
-       
-    }
-
-    #bouton{
-        display: flex;
-        justify-content: flex-end;
-    }
-    #partie{
-        margin-right: 5%;
+    #resultat{
+        font-size: 4vw;
     }
 
 }    
